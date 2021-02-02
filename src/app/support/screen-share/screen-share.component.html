@@ -1,0 +1,14 @@
+<div>
+  <h5>Connect with Peer</h5>
+
+  <!-- Video & screen share container -->
+  <span>PeerId: {{peerId}}</span>
+  <div style="width: 400px; height: 300px; border: 2px solid" id="remote-video"></div>
+
+  <br>
+  <div style="margin-top: 20px;">
+    <input type="text" placeholder="Peer Id" [(ngModel)]='peerIdShare' />
+    <button class="button" (click)="connectWithPeer()">Call Peer</button>
+    <button class="button" (click)="screenShare()">Screen share</button>
+  </div>
+</div>
