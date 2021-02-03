@@ -42,7 +42,6 @@ export class ScreenShareComponent implements OnInit {
             this.peerList.push(call.peer);
           }
         });
-
       }).catch(err => {
         console.log(err + 'Unable to get media');
       });
